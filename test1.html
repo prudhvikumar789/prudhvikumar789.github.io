@@ -11,10 +11,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
     <body>
-        <div class="jumbotron text-center">
-            <h1>APPZILLION</h1>
-            <p>This is my <code>First</code> Website.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Download</button>
+        <div class="jumbotron text-center" style="background-color:#2196F3;">
+            <h1 style="color:#eceff1;">Appzillon</h1>
+            <p>This is the <span class="label label-default">New</span><code>Sample</code>Website.</p>
+            <button type="button" class="btn btn-default">Search  <span class="glyphicon glyphicon-search"></span></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Download  <span class="glyphicon glyphicon-download"></span></button>
+            
+            <!-- <button type="button" class="btn btn-success">Print  <span class="glyphicon glyphicon-print"></span></button> -->
             <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
                     
@@ -25,7 +28,7 @@
                           <h4 class="modal-title">Download Link</h4>
                         </div>
                         <div class="modal-body">
-                            <a href="http://localhost:8080">Click Here</a>
+                            <a href="http://localhost:8080">Click Here <span class="glyphicon glyphicon-download"></span></a>
                           <!-- <p>http://localhost:8080</p> -->
                         </div>
                         <div class="modal-footer">
@@ -38,24 +41,52 @@
         </div>
 
 
-        <div class="container">
-            <div class="col-sm-4">
+        <div class="container" style="background-color:#CFD8DC;">
+            <div class="col-sm-3">
                 <h3>Column 1</h3>
                 <p>Hello</p>
                 <p>World</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <h3>Column 2</h3>
                 <p>Hello</p>
                 <p>World</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                     <h3>Column 3</h3>
                     <p>Hello</p>
                     <p>World</p>
             </div>
+            <div class="col-sm-3">
+                    <h3>Column 4</h3>
+                    <p>Hello</p>
+                    <p>World</p>
+            </div>
 
+        </div><br></br>
+
+        <div class="container">
+                <div class="panel panel-default">
+                        <div class="panel-heading">FAQ's</div>
+                        <a href="#" class="list-group-item default" data-toggle="collapse" data-target="#demo">What is Appzillon ?</a>
+                        <div id="demo" class="collapse"><p>  Appzillon, i-exceed’s  flagship product offering consists of a world-class Unified Application Development Suite (MADP+) and readymade business solutions for various industries (including BFSI).</p></div>
+                        <a href="#" class="list-group-item default" data-toggle="collapse" data-target="#demo1">What is Appzillon ?</a>
+                        <div id="demo1" class="collapse"><p>  Appzillon, i-exceed’s  flagship product offering consists of a world-class Unified Application Development Suite (MADP+) and readymade business solutions for various industries (including BFSI).</p></div>
+                        <a href="#" class="list-group-item default" data-toggle="collapse" data-target="#demo2">What is Appzillon ?</a>
+                        <div id="demo2" class="collapse"><p>  Appzillon, i-exceed’s  flagship product offering consists of a world-class Unified Application Development Suite (MADP+) and readymade business solutions for various industries (including BFSI).</p></div>
+                </div>
+                
         </div>
+
+
+        <div class="container">            
+            <ul class="pager">
+                <li class="previous"><a href="#">Previous</a></li>
+                <li class="next"><a href="#">Next</a></li>
+            </ul>
+        </div>
+
+
 
 </body>
 </html>

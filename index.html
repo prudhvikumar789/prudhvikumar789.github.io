@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+            /* Style to reverse the caret icon from pointing downwards to upwards */
+            .caret.caret-up {
+              border-top-width: 0;
+              border-bottom: 4px solid #fff;
+            }
+    </style>
   </head>
     <body>
             <!-- <h4>Hello <abbr title="MADITHATI">M</abbr> <small>Prudhvikumar</small></h4> 
@@ -163,7 +170,7 @@
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-success">Success</button>
             <button type="button" class="btn btn-info disabled">Info</button>
-            <button type="button" class="btn btn-warning btn-xs">Warning</button>
+            <button type="button" class="btn btn-warning btn-xs">Warning</button><br></br>
             <button type="button" class="btn btn-danger btn-block">Danger</button>
             <button type="button" class="btn btn-link">Link</button> 
         </div>
@@ -206,8 +213,130 @@
                         <a href="#" class="btn btn-primary">Samsung</a>
                         <a href="#" class="btn btn-primary">Sony</a>
                 </div>
+        </div>
+
+
+
+
+        <div class="container-fluid progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                  Free Space
+                </div>
+                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+                        Warning
+                </div>
+                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:50%">
+                        Warning
+                </div>
+        </div>
+
+
+
+
+        <div class="container">
+                <h2>Pager</h2>
+                <p>The .pager class provides previous and next buttons (links):</p>                  
+                <ul class="pager">
+                  <li><a href="#">Previous</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+
+
+
+
+
+
+
+              <ul class="list-group text-default">
+                <div>
+                    <a href="#" class="list-group-item active">
+                    <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+                    <p class="list-group-item-text">First item <span class="badge">12</span></p>
+                    </a>
+                </div>
+                    <a href="#" class="list-group-item disabled">Second item <span class="badge">2</span></a>
+                    <a href="#" class="list-group-item list-group-item-success">Third item <span class="badge">132</span></a>
+            </ul> 
+
+
+
+
+
+            <div class="panel panel-default">
+                    <div class="panel-heading">Panel Heading</div>
+                    <div class="panel-body">Panel Content</div>
+                    <div class="panel-footer">Panel Footer</div>
             </div>
 
+
+
+
+
+        <div class="container">    
+            <div class="dropup">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Version <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-header">Dropdown header 1</li> 
+                      <li><a href="#">V3.5.0</a></li>
+                      <li class="divider"></li>
+                      <li class="disabled"><a href="#">V3.5.5</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">Dropdown header 1</li> 
+                      <li class="active"><a href="#">V3.6.0</a></li>
+                    </ul>
+            </div>
+        </div>
+
+
+
+                <div class="container">
+                    <h2>Dropdowns</h2>
+                    <p>The .dropdown class is used to indicate a dropdown menu.</p>
+                    <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>                                          
+                    <div class="dropup">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+                    <div class="container">
+                            <h2>Change the caret symbol on dropdown</h2>                                       
+                            <div class="dropdown">
+                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown
+                              <span class="caret"></span></button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                              </ul>
+                            </div>
+                    </div>
+                          
+                          <script>
+                          $(document).ready(function(){
+                            $(".dropdown").on("hide.bs.dropdown", function(){
+                              $(".btn").html('Dropdown <span class="caret"></span>');
+                            });
+                            $(".dropdown").on("show.bs.dropdown", function(){
+                              $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+                            });
+                          });
+                          </script>
+                          
+            
 
     </body>
 </html>
